@@ -1,5 +1,8 @@
 Calendar / sharedCalendar
 =========================
+실행 파일
+
+        shared_calendar/execution/Calendar.exe
 
 컴파일 명령어 
     
