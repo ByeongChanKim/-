@@ -44,10 +44,10 @@ public:
 	    }
 	    return (hcount / 2 + count);
     }
-    bool hangeulCheck(char &s);
+    bool hangeulCheck(char& c1, char& c2);
 
     // 인코딩 체크
-    bool encodingCheck(string& s){
+    bool encodingCheck(string s){
 
         string e = "";
 
@@ -64,7 +64,7 @@ public:
         //         return hangeulCheck(hanguelStart);
         //     }
         for(int i = 0; i < s.size(); ++i)
-            if(e.find(s[i]) == string::npos && !hangeulCheck(s[i])) return false;
+            if(e.find(s[i]) == string::npos && !hangeulCheck(s[i], s[i+1])) return false;
 
         return true;
     }
